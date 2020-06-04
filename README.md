@@ -116,7 +116,7 @@ key from the restricted domain---which is active by default---is prohibited, as
 the restricted domain marks this page as non-readable.) This concept applies to
 every xMP domain, except for the restricted domain (which is created by
 default) in which we accumulate all restrictions across the existing altp2m
-views. 
+views.
 
 To free an xMP domain, we can simply use `xmp_free_pdomain`.
 
@@ -176,7 +176,7 @@ HMACs to authenticate selected pointers. We  truncate the generated HMAC to 15
 bit of the most-significant-bits of the pointer’s address.  To achieve this, we
 can pass a pointer to the function `xmp_sign_ptr`. This function takes
 a *context* (which should be a unique and immutable value, such as the address
-of a `struct task_struct` instance) as well as an `altp2m_id` value. 
+of a `struct task_struct` instance) as well as an `altp2m_id` value.
 
 ```c
 void *xmp_sign_ptr(void *ptr, void *ctx, uint16_t altp2m_id);
@@ -255,7 +255,7 @@ ept = ["no-pml, no-ad"]
 
 [Sergej Proskurin](mailto:proskurin@sec.in.tum.de), [Marius
 Momeu](mailto:momeu@sec.in.tum.de) and [Christopher
-Roemheld](mailto:roemheld@in.tum.de) are researchers at the [Chair of IT
+Roemheld](mailto:roemheld@sec.in.tum.de) are researchers at the [Chair of IT
 Security](https://www.sec.in.tum.de/i20/) at the [Technical University of
 Munich](https://www.tum.de/). Their work covers many low-level security
 aspects with a focus on virtualization-assisted OS security and malware
